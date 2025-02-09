@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show password</title>
+</head>
+
+
+<body>
+    <div class="pc">
+    <input type="password" id="pass">
+    <input type="checkbox" id="check" style="cursor: pointer;">
+</div>
+    <script>
+         let pass = document.getElementById("pass");
+         let check = document.getElementById("check");
+
+         check.onclick =function(){
+            if(pass.type == "password"){
+                pass.type = "text";
+
+            }
+            else{
+                pass.type = "password";
+            }
+         }
+    </script>
+</body>
+</html>
+<!-- How To Hide And Show Password On Website Using HTML, CSS & JavaScript | Password Toggle -->
